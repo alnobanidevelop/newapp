@@ -14,7 +14,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  Future finalAgetFuture;
+  Future agetFuture;
 
   Future<int> getFinalAge() async {
     SharedPreferences _prefs = await SharedPreferences.getInstance();
@@ -47,7 +47,7 @@ class _MyAppState extends State<MyApp> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           IncreaseAge(),
-                          Age(),
+                          UserAge(),
                           DecreaseAge(),
                         ],
                       ),
